@@ -43,3 +43,5 @@ jobs:
           file: ./java/${{ matrix.tag }}/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
+          tags: |
+            ghcr.io/zelear/yolks:go_${{ matrix.tag }}
